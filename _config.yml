@@ -31,7 +31,7 @@ plugins:
   - jekyll-sitemap
 
 safe: true
-whitelist: [jekyll-feed, jekyll-sitemap]
+whitelist: [jekyll-seo-tag, jekyll-sitemap]
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
