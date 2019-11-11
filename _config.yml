@@ -30,6 +30,9 @@ remote_theme: Gaudo/minima@v2.5.0
 plugins:
   - jekyll-sitemap
 
+safe: true
+whitelist: [jekyll-feed, jekyll-sitemap]
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
