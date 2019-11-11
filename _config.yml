@@ -22,9 +22,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://gaudo.net" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 
-minima:
-  social_links:
-    github: Gaudo
+github_username: Gaudo
   
 permalink: /:categories/:year/:month/:day/:title
 
