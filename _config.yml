@@ -24,6 +24,7 @@ github_username: Gaudo
   
 permalink: /:categories/:year/:month/:day/:title:output_ext
 
+timezone: Europe/Rome
 # Build settings
 #markdown: kramdown
 #remote_theme: Gaudo/minima@v2.5.0
