@@ -14,7 +14,7 @@ permalink: /
                     <header>
                         <h1>{{ post.title }}</h1>
                         <time datetime="{{ post.date | date: "%F" }}">{{ post.date | date: "%e %B %Y" }}</time>
-                        <p>{{ post.excerpt }}</p>
+                        {{ post.excerpt }}
                     </header>
                 </article>
             </a>
