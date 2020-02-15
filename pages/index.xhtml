@@ -9,7 +9,7 @@ permalink: /
     {% assign sorted = (site.posts | sort: 'date') | reverse %}
     {% for post in sorted %}
         <li>
-            <a href="{{ post.url }}">
+            <a href="{{ post.url }}" aria-label="Read more about '{{post.title}}'">
                 <article>
                     <header>
                         <h1>{{ post.title }}</h1>
