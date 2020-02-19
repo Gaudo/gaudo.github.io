@@ -5,16 +5,29 @@
     <title>{{ page.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="{{ page.description }}" />
+    <style>
+        #gaudo_body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        #gaudo_body-wrapper {
+            max-width:  400px;
+        }
+    </style>
 </head>
 
-<body>
-    <nav>
-        <a href="{% link pages/index.xhtml %}">Posts</a>
-        <a href="{% link pages/about_me.xhtml %}">About me</a>
-    </nav>
-    <main>
-        {{ content }}
-    </main>
+<body id="gaudo_body">
+    <div id="gaudo_body-wrapper">
+        <nav>
+            <a href="{% link pages/index.xhtml %}">Posts</a>
+            <a href="{% link pages/about_me.xhtml %}">About me</a>
+        </nav>
+        <main>
+            {{ content }}
+        </main>
+    </div>
 </body>
 
 </html>
