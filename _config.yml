@@ -22,12 +22,7 @@ url: "https://gaudo.net" # the base hostname & protocol for your site, e.g. http
 
 github_username: Gaudo
 
-permalink: /:basename:output_ext
-
-collections:
-  posts:
-    output: true
-    permalink: /:categories/:year/:month/:day/:title:output_ext
+permalink: /:categories/:year/:month/:day/:title:output_ext
     
 timezone: Europe/Rome
 # Build settings
