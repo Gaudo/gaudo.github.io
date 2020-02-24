@@ -27,7 +27,7 @@ pgs:
 <body id="gaudo_body">
     <div id="gaudo_body-wrapper">
         <nav>
-            {% for p in pgs %}
+            {% for p in page.pgs %}
                 <li><a href="{% link p[1] %}">{{ p[0] }}</a></li>
             {% endfor %}
             <a href="{% link pages/index.xhtml %}">Posts</a>
