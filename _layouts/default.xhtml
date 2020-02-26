@@ -21,8 +21,8 @@
 <body id="gaudo_body">
     <div id="gaudo_body-wrapper">
         <nav>
-            <a class="{% if 'index.xhtml' == page.url %}active{% endif %}" href="{% link pages/index.xhtml %}">Posts</a>
-            <a class="{% if 'about_me.xhtml' == page.url %}active{% endif %}" href="{% link pages/about_me.xhtml %}">About me</a>
+            <a class="{% if '/index.xhtml' == page.url %}active{% endif %}" href="{% link pages/index.xhtml %}">Posts</a>
+            <a class="{% if '/about_me.xhtml' == page.url %}active{% endif %}" href="{% link pages/about_me.xhtml %}">About me</a>
         </nav>
         <main>
             {{ content }}
