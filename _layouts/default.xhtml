@@ -2,32 +2,32 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 
 <head>
+
+    {% if jekyll.environment == "development" %}
+        <script async="async" src="http://127.0.0.1:35729/livereload.js"></script>
+    {% else %}
+        <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self'" />
+    {% endif %}
     <title>{{ page.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="{{ page.description }}" />
-    <style>
-        #gaudo_body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
-        #gaudo_body-wrapper {
-            max-width:  400px;
-        }
-    </style>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="anonymous"  /> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700&amp;display=swap" rel="stylesheet" crossorigin="anonymous"  />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+
 </head>
 
-<body id="gaudo_body">
-    <div id="gaudo_body-wrapper">
-        <nav>
-            <a class="{% if '/index.xhtml' == page.url %}active{% endif %}" href="{% link pages/index.xhtml %}">Posts</a>
-            <a class="{% if '/about_me.xhtml' == page.url %}active{% endif %}" href="{% link pages/about_me.xhtml %}">About me</a>
-        </nav>
-        <main>
-            {{ content }}
-        </main>
-    </div>
+<body id="gaudo_body-wrapper">
+    <nav id="gaudo_nav">
+        <a class="gaudo_nav-item {% if '/index.xhtml' == page.url %}gaudo_nav-item-active{% endif %}"
+            href="{% link pages/index.xhtml %}">Home</a>
+        <a class="gaudo_nav-item {% if '/about_me.xhtml' == page.url %}gaudo_nav-item-active{% endif %}"
+            href="{% link pages/about_me.xhtml %}">About me</a>
+    </nav>
+    <main>
+        {{ content }}
+    </main>
 </body>
 
 </html>

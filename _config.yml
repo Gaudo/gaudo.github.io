@@ -20,10 +20,14 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://gaudo.net" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 
+sass:
+  sass_dir: _sass
+
 github_username: Gaudo
 
 permalink: /:categories/:year/:month/:day/:title.xhtml
-    
+excerpt_separator: <!--more-->
+theme:
 timezone: Europe/Rome
 # Build settings
 #markdown: kramdown
@@ -42,3 +46,6 @@ timezone: Europe/Rome
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+sass:
+  style: compressed

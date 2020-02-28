@@ -1,0 +1,35 @@
+@import 'fluid'
+
+html 
+    @include interpolate(font-size, 320px, 1366px, 16px, 22px)
+    font-family: 'Roboto'
+
+body
+    line-height: 1.4rem
+    padding: 1rem
+
+#gaudo_body-wrapper
+    max-width: 40rem
+    margin: 0 auto
+
+#gaudo_nav
+    margin-bottom: 2vh
+
+.gaudo_nav-item
+    position: relative
+    font-weight: bold
+    color: orangered
+    left: -.4rem
+    padding: .4rem
+    display: inline-block
+    font-size: 1.2rem
+    text-decoration: underline
+
+.gaudo_nav-item-active
+    text-decoration: none
+
+a
+    position: relative
+    left: -.4rem
+    padding: .4rem
+    font-size: 1.2rem

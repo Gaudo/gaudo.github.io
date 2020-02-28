@@ -5,19 +5,22 @@ description: Hello World
 permalink: /:basename:output_ext
 ---
 
-<ul>
-    {% assign sorted = (site.posts | sort: 'date') | reverse %}
+<ul id="gaudo_posts-list">
+    {% assign sorted = site.posts %}
     {% for post in sorted %}
-        <li>
-            <a href="{{ post.url }}" aria-label="Read more about '{{post.title}}'">
-                <article>
-                    <header>
-                        <h1>{{ post.title }}</h1>
-                        <time datetime="{{ post.date | date: "%F" }}">{{ post.date | date: "%e %B %Y" }}</time>
-                    </header>
-                    {{ post.excerpt }}
-                </article>
-            </a>
-        </li>
+    <li>
+        <article class="gaudo_post">
+            <header>
+                <a class="gaudo_post-title-wrapper" href="{{ post.url }}" aria-label="Read more about '{{post.title}}'">
+                    <h1 class="gaudo_post-title">{{ post.title }}</h1>
+                </a>
+                <time class="gaudo_post-date" datetime="{{ post.date | date: "%F" }}">{{ post.date | date: "%e %B %Y" }}</time>
+            </header>
+            <div>
+                {{ post.excerpt }}
+            </div>
+            <a class="gaudo_post-readmore" href="{{ post.url}}">Read more..</a>
+        </article>
+    </li>
     {% endfor %}
 </ul>
