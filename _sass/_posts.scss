@@ -14,7 +14,7 @@
     display: block;
     color: $text-color;
     text-decoration: none;
-    transition: transform 30ms;
+    transition: transform 400ms;
 }
 
 .gaudo_post-title {
@@ -24,11 +24,11 @@
 }
 
 .gaudo_post{
-    margin: 2rem 0 2rem 0;
+    margin: 1.5rem 0 1.5rem 0;
 }
 
 .gaudo_post-title-wrapper:hover, .gaudo_post-title-wrapper:focus{
-    transform: scale(1.04);
+    transform: scale(1.02);
 }
 
 .gaudo_post-readmore {
