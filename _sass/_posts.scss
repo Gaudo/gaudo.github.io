@@ -10,9 +10,8 @@
     color: $side-color;
 }
 
-.gaudo_post-title-wrapper {
+.gaudo_post-link {
     display: block;
-    color: $text-color;
     text-decoration: none;
     transition: transform 400ms;
 }
@@ -25,9 +24,10 @@
 
 .gaudo_post{
     margin: 1.5rem 0 1.5rem 0;
+    color: $text-color;
 }
 
-.gaudo_post-title-wrapper:hover, .gaudo_post-title-wrapper:focus{
+.gaudo_post-link:hover, .gaudo_post-link:focus{
     transform: scale(1.02);
 }
 
