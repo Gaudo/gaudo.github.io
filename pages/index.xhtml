@@ -9,18 +9,19 @@ permalink: /:basename:output_ext
     {% assign sorted = site.posts %}
     {% for post in sorted %}
     <li>
-        <article class="gaudo_post">
-            <header>
-                <a class="gaudo_post-title-wrapper" href="{{ post.url }}" aria-label="Read more about '{{post.title}}'">
-                    <h1 class="gaudo_post-title">{{ post.title }}</h1>
-                </a>
-                <time class="gaudo_post-date" datetime="{{ post.date | date: "%F" }}">{{ post.date | date: "%e %B %Y" }}</time>
-            </header>
-            <div>
-                {{ post.excerpt }}
-            </div>
-            <a class="gaudo_post-readmore" href="{{ post.url}}">Read more..</a>
-        </article>
+        <a class="gaudo_post-title-wrapper" href="{{ post.url }}" aria-label="Read more about '{{post.title}}'">
+            <article class="gaudo_post">
+                <header>
+                        <h1 class="gaudo_post-title">{{ post.title }}</h1>
+                    <time class="gaudo_post-date" datetime="{{ post.date | date: "%F" }}">{{ post.date | date: "%e %B %Y" }}</time>
+                </header>
+                <div>
+                    {{ post.excerpt }}
+                </div>
+                <span class="gaudo_post-readmore">Read more..</span>
+            </article>
+        </a>
+
     </li>
     {% endfor %}
 </ul>

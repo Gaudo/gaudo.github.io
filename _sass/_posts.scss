@@ -1,3 +1,5 @@
+@import 'variables';
+
 #gaudo_posts-list {
     list-style: none;
     padding: 0;
@@ -5,25 +7,32 @@
 
 .gaudo_post-date {
     font-size: 0.9rem;
-    color: #666;
+    color: $side-color;
 }
 
 .gaudo_post-title-wrapper {
     display: block;
-    color: #000;
+    color: $text-color;
     text-decoration: none;
+    transition: transform 30ms;
 }
 
 .gaudo_post-title {
     margin: 0 0 .5rem 0;
+    font-family: Caladea;
+    font-size: 2rem;
 }
 
 .gaudo_post{
-    margin: 0 0 1rem 0;
+    margin: 2rem 0 2rem 0;
+}
+
+.gaudo_post-title-wrapper:hover, .gaudo_post-title-wrapper:focus{
+    transform: scale(1.04);
 }
 
 .gaudo_post-readmore {
     font-size: 0.9rem;
     font-weight: bold;
-    color: orangered;
+    color: $primary-color;
 }

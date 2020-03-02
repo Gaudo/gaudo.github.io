@@ -1,8 +1,9 @@
 @import 'fluid'
+@import 'variables'
 
 html 
-    @include interpolate(font-size, 320px, 1366px, 16px, 22px)
-    font-family: 'Roboto'
+    @include interpolate(font-size, 320px, 1366px, 16px, 20px)
+    font-family: $body-fontfamily
 
 body
     line-height: 1.4rem
@@ -13,12 +14,12 @@ body
     margin: 0 auto
 
 #gaudo_nav
-    margin-bottom: 2vh
+    margin-bottom: 2rem
 
 .gaudo_nav-item
     position: relative
     font-weight: bold
-    color: orangered
+    color: $primary-color
     left: -.4rem
     padding: .4rem
     display: inline-block
