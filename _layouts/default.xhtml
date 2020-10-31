@@ -21,8 +21,6 @@
     <nav id="gaudo_nav">
         <a class="gaudo_nav-item {% if '/index.xhtml' == page.url %}gaudo_nav-item-active{% endif %}"
             href="{% link pages/index.xhtml %}">Home</a>
-        <a class="gaudo_nav-item {% if '/about_me.xhtml' == page.url %}gaudo_nav-item-active{% endif %}"
-            href="{% link pages/about_me.xhtml %}">About me</a>
     </nav>
     <main>
         {{ content }}
