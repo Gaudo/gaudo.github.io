@@ -27,7 +27,7 @@ github_username: Gaudo
 
 permalink: /:categories/:year/:month/:day/:title.xhtml
 excerpt_separator: <!--more-->
-theme:
+theme: minima
 timezone: Europe/Rome
 # Build settings
 #markdown: kramdown
