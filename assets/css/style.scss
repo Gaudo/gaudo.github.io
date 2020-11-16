@@ -3,13 +3,13 @@
 
 @use 'bulma/utilities/all';
 @use 'bulma/base/all';
-@use 'bulma/grid/all';
+@use 'bulma/grid/all' as grid;
 
 .skills {
-    @extend .columns;
+    @extend grid.columns;
 
     &-frontend, &-backend, &-system {
-        @extend .column;
+        @extend grid.column;
     }
 
     &-frontend {
