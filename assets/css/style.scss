@@ -1,9 +1,9 @@
 ---
 ---
 
-@import 'bulma/utilities/all';
-@import 'bulma/base/all';
-@import 'bulma/grid/all';
+@use 'bulma/utilities/all';
+@use 'bulma/base/all';
+@use 'bulma/grid/all';
 
 .skills {
     @extend .columns;
