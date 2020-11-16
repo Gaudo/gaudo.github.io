@@ -1,0 +1,24 @@
+---
+---
+
+@import 'bulma/grid/all';
+
+.skills {
+    @extend .columns;
+
+    &-frontend, &-backend, &-system {
+        @extend .column;
+    }
+
+    &-frontend {
+        background-color: red;
+    }
+
+    &-backend {
+        background-color: green;
+    }
+
+    &-system {
+        background-color: blue;
+    }
+}
